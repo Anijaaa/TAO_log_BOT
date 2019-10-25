@@ -1,1 +1,1 @@
-worker: python MMOくん.py
+worker: python log_server.py
