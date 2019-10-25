@@ -1,4 +1,4 @@
-import discord,json,traceback,getpass
+import discord,traceback,getpass
 from discord.ext import commands
 
 async def send_error(self,error):
@@ -154,4 +154,4 @@ class MyBot(commands.Bot):
     
 if __name__ == '__main__':
     bot = MyBot(command_prefix='&&')
-    bot.run(json.load(open('setting.json', 'r'))['token'])
+    bot.run(os.environ.get("TOKEN"))
